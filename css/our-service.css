@@ -3,7 +3,7 @@
 	height: 100dvh;
 	background:
 		linear-gradient(to right, rgba(40, 50, 72, 0.4) 0%, rgba(40, 50, 72, 0.5) 100%),
-		url('assets/services/service.png') no-repeat center center;
+		url('https://phatjack.github.io/K-A-landing-page/assets/services/service.png') no-repeat center center;
 	background-size: cover;
 }
 
