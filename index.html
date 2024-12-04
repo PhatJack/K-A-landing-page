@@ -73,6 +73,8 @@
 
 	<!-- Main -->
 	<main id="#">
+
+		<!-- Hero Section -->
 		<section class="hero">
 			<div class="hero__container">
 				<div class="hero__top">
@@ -111,6 +113,8 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- About Us -->
 		<div id="about-us" class="about-us">
 			<div class="about-us__left">
 				<h1 class="about-us__title">VỀ CHÚNG TÔI</h1>
@@ -151,6 +155,8 @@
 				<img src="assets/Earth.png" alt="Earth" />
 			</div>
 		</div>
+
+		<!-- Our Service -->
 		<div id="services" class="our-service">
 			<div class="our-service__container">
 				<div class="our-service__left">
@@ -183,6 +189,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Cooperation -->
 		<div id="cooperation" class="cooperation container">
 			<div class="cooperation__header">
 				<h1 class="cooperation__title">ĐỐI TÁC CỦA CHÚNG TÔI</h1>
@@ -341,6 +349,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Review -->
 		<div id="customer-review" class="reviews">
 			<h2 class="reviews-title">
 				KHÁCH HÀNG NÓI GÌ VỀ CHÚNG TÔI
@@ -392,6 +402,8 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- News -->
 		<div id="news" class="news">
 			<div class="news__container container">
 				<div class="news__top">
@@ -590,34 +602,5 @@
 		</svg>
 	</button>
 </body>
-<script>
-	document.addEventListener('DOMContentLoaded', () => {
-		const scrollBtn = document.querySelector('.scroll-top-btn');
-		const navList = document.querySelectorAll('.header__menu-item');
-		const menuToggle = document.querySelector('.header__menu-toggle');
-		const nav = document.querySelector('.header__nav');
-
-		menuToggle.addEventListener('click', () => {
-			nav.classList.toggle('is-open');
-			menuToggle.classList.toggle('is-active');
-		});
-		navList.forEach((item) => {
-			item.addEventListener('click', () => {
-				nav.classList.remove('is-open');
-				menuToggle.classList.remove('is-active');
-			});
-		});
-		scrollBtn.addEventListener("click", () => {
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-		})
-		window.onscroll = () => {
-			if (document.body.scrollTop > 110 || document.documentElement.scrollTop > 110) {
-				scrollBtn.style.display = 'flex';
-			} else {
-				scrollBtn.style.display = 'none';
-			}
-		};
-	});
-</script>
-
+<script src="index.js"></script>
 </html>
