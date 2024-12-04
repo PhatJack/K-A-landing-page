@@ -18,7 +18,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
-	padding-left: calc(var(--space-10) * 2);
 	padding-bottom: calc(var(--space-10) * 3);
 }
 
@@ -105,6 +104,10 @@
 }
 
 @media screen and (min-width:768px) {
+
+	.hero__container {
+		padding-left: calc(var(--space-10) * 2);
+	}
 
 	.hero__top .hero__top__description {
 		justify-content: start;
